@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Header extends Component {
-    render() {
+const Header = () => {
         return (
             <header>
                 <h1>SISTEMA DE GESTIÓN DE TURNOS</h1>
             </header>
         )
     }
-}
 
 export default Header

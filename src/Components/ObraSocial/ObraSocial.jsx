@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import { axiosConfig } from '../../config';
 import Paginacion from '../Paginacion';
 
 class ObraSocial extends Component {
@@ -15,7 +15,7 @@ class ObraSocial extends Component {
     //Lista Obras Sociales
     getObrasSociales = async () => {
         try {
-            const res = await axios.get("/obras-sociales");
+            const res = await axiosConfig.get("/obras-sociales");
             const obras_sociales = await res.data;
             this.setState({ obras_sociales });
         } catch (error) {
@@ -25,7 +25,7 @@ class ObraSocial extends Component {
 
     deleteObraSocial = (event, id, index) => {
         console.log(this.props);
-        axios.delete(`/obras-sociales/${id}`)
+        axiosConfig.delete(`/obras-sociales/${id}`)
         .then((res) => {
             let rows = document.getElementsByClassName("pagination-body");
             rows[index].remove();
