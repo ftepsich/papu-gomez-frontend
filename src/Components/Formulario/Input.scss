@@ -1,0 +1,39 @@
+.input-container {
+    border: 1px solid white;
+    margin: 10px 0;
+    position: relative;
+    label {
+        color: var(--dark-gray);
+        cursor: text;
+        font-size: 16px;
+        position: absolute;
+        left: 5px;
+        user-select: none;
+        top: 10px;
+        transition: .3s ease;
+    }
+    input {
+        background: none;
+        border: none;
+        border-bottom: 1.5px solid var(--dark-blue-30);
+        box-sizing: border-box;
+        display: block;
+        font-size: 16px;
+        margin-bottom: 20px;
+        min-height: 40px;
+        outline: none;
+        padding: 5px;
+        transition: .3s ease;
+        width: 100%;
+        &::placeholder { opacity: 0; transition: .3s ease; }
+        &:focus::placeholder { opacity: 1; }
+        &:focus { border-bottom: 1.5px solid var(--dark-blue); }
+        &:focus ~ label,
+        &:valid ~ label,
+        &.has-text ~ label {
+            color: var(--light-black);
+            font-size: 14px;
+            top: -12px;
+        }
+    }
+}

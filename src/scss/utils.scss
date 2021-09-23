@@ -1,0 +1,44 @@
+$sizes: 5, 10, 15, 20, 25, 30;
+// ---------------------------------------------------------------------------------------- Margin
+@each $size in $sizes {
+    .mg-#{$size}{ margin: $size + px !important; }
+}
+
+@each $size in $sizes {
+    .mx-#{$size}{ margin-right: $size + px !important; margin-left: $size + px !important; }
+    .my-#{$size}{ margin-top: $size + px !important; margin-bottom: $size + px !important; }
+}
+
+@each $size in $sizes {
+    .mt-#{$size}{ margin-top: $size + px !important; }
+    .mr-#{$size}{ margin-right: $size + px !important; }
+    .mb-#{$size}{ margin-bottom: $size + px !important; }
+    .ml-#{$size}{ margin-left: $size + px !important; }
+}
+
+// ---------------------------------------------------------------------------------------- Padding
+@each $size in $sizes {
+    .pg-#{$size}{ padding: $size + px !important; }
+}
+
+@each $size in $sizes {
+    .px-#{$size}{ padding-right: $size + px !important; padding-left: $size + px !important; }
+    .py-#{$size}{ padding-top: $size + px !important; padding-bottom: $size + px !important; }
+}
+
+@each $size in $sizes {
+    .pt-#{$size}{ padding-top: $size + px !important; }
+    .pr-#{$size}{ padding-right: $size + px !important; }
+    .pb-#{$size}{ padding-bottom: $size + px !important; }
+    .pl-#{$size}{ padding-left: $size + px !important; }
+}
+// ---------------------------------------------------------------------------------------- Grid
+@each $col in 2, 3, 4 {
+    .col-#{$col} {
+        display: grid;
+        grid-template-columns: repeat($col,1fr);
+    }
+}
+@each $size in $sizes {
+    .cg-#{$size}{ grid-column-gap: $size + px !important; }
+}

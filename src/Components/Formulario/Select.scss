@@ -1,0 +1,37 @@
+.select-container {
+    position: relative;
+}
+.select-body{
+    background-color: var(--default-white);
+    border-radius: 5px;
+    display: block;
+    left: -1px;
+    max-height: 175px;
+    opacity: 0;
+    overflow: auto;
+    position: absolute;
+    scroll-behavior: smooth;
+    top: 45px;
+    transition: .3s ease;
+    width: calc(100% + 2px);
+    z-index: -1;
+    .select-container input:focus ~ & { opacity: 1; z-index: 50;}
+}
+.select-item {
+    align-items: center;
+    background-color: var(--dark-blue-30);
+    border: 1px solid var(--light-gray);
+    box-sizing: border-box;
+    color: var(--dark-black);
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    margin: -1px 0;
+    min-height: 40px;
+    padding: 5px;
+    transition: .3s ease;
+    &:hover,
+    &.selected {
+        background-color: var(--dark-blue-50);
+    }
+}

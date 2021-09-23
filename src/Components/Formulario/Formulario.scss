@@ -1,0 +1,81 @@
+.formulario,
+.card-info {
+    align-items: center;
+    border: 1px solid var(--dark-gray-75);
+    border-radius: 5px;
+    box-shadow: 0 0 2px var(--dark-gray);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 20px auto;
+    width: 500px;
+    @media only screen and (max-width:767px){ width: 95%; }
+    .form-header,
+    .card-header {
+        align-items: center;
+        background-color: var(--dark-blue);
+        border-bottom: 1px solid var(--dark-gray-75);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        box-sizing: border-box;
+        color: var(--light-gray);
+        display: flex;
+        font-size: 24px;
+        font-weight: bold;
+        height: 80px;
+        justify-content: center;
+        margin: 0 -2px;
+        padding: 30px;
+        width: calc(100% + 2px);
+    }
+    .form-body,
+    .card-body {
+        box-sizing: border-box;
+        padding: 20px 30px;
+        width: 100%;
+        button {
+            margin-top: 10px;
+            width: 100%;
+        }
+    }
+    fieldset {
+        border: none;
+        margin: 0 0 20px;
+        padding: 0;
+    }
+    legend {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+}
+
+.card-field {
+    border: 1px solid white;
+    margin: 10px 0;
+    position: relative;
+    .card-label {
+        color: var(--light-black);
+        font-size: 14px;
+        left: 5px;
+        position: absolute;
+        top: -12px;
+    }
+    .card-data {
+        align-items: center;
+        background: none;
+        border: none;
+        border-bottom: 1.5px solid var(--dark-blue);
+        box-sizing: border-box;
+        display: flex;
+        font-size: 16px;
+        margin-bottom: 20px;
+        min-height: 40px;
+        outline: none;
+        padding: 5px;
+        width: 100%;
+    }
+}

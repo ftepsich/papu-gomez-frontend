@@ -1,0 +1,53 @@
+:root {
+    --dark-blue         : #1976d2;
+    --dark-blue-75      : #1976d2c0;
+    --dark-blue-50      : #1976d280;
+    --dark-blue-30      : #1976d24d;
+    --dark-blue-15      : #1976d226;
+    --default-blue      : #2196f3;
+    --light-blue        : #bbdefb;
+    --accent-blue       : #448aff;
+    
+    --dark-green        : #388e3c;
+    --dark-green-85     : #388e3cda;
+    --default-green     : #4caf50;
+    --default-green-85  : #4caf50da;
+    --light-green       : #c8e6c9;
+    --accent-green      : #69f0ae;
+    
+    --dark-orange       : #e64a19;
+    --dark-orange-85    : #e64a19da;
+    --dark-orange-50    : #e64a1980;
+    --default-orange    : #ff5722;
+    --light-orange      : #FFCCBC;
+    --accent-orange     : #dd2c00;
+    
+    --dark-red          : #D32F2F;
+    --default-red       : #f44336;
+    --light-red         : #FFCDD2;
+    --accent-red        : #ff5151;
+    
+    --dark-yellow       : #FBC02D;
+    --default-yellow    : #FFEB3B;
+    --default-yellow-85 : #FFEB3BDA;
+    --light-yellow      : #FFF9C4;
+    --accent-yellow     : #ffff00;
+    
+    --dark-purple       : #7B1FA2;
+    --default-purple    : #9C27B0;
+    --light-purple      : #E1BEE7;
+    --accent-purple     : #E040FB;
+    
+    --dark-black        : #212121;
+    --dark-black-75     : #212121c0;
+    --dark-black-50     : #21212180;
+    --default-black     : #424242;
+    --default-black-75  : #424242c0;
+    --default-black-50  : #42424280;
+    --light-black       : #616161;
+    
+    --dark-gray         : #757575;
+    --default-gray      : #bdbdbd;
+    --light-gray        : #fafafa;
+    --default-white     : #ffffff;
+}
