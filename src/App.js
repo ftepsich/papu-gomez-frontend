@@ -14,7 +14,7 @@ import Paciente from './Components/Paciente/Paciente';
 import PacienteForm from './Components/Paciente/PacienteForm';
 import PacienteInfo from './Components/Paciente/PacienteInfo';
 
-import ObraSocial from './Components/ObraSocial/ObraSocial';
+import ObraSocialList from './Components/ObraSocial/ObraSocialList';
 import ObraSocialForm from './Components/ObraSocial/ObraSocialForm';
 import ObraSocialInfo from './Components/ObraSocial/ObraSocialInfo';
 
@@ -68,7 +68,7 @@ class App extends Component {
                 <Route exact key="2" path="/pacientes/new" component={PacienteForm} />,
                 <Route exact key="3" path="/pacientes/edit/:id" component={PacienteForm} />,
                 <Route exact key="4" path="/pacientes/:id" component={PacienteInfo} />,
-                <Route exact key="5" path="/obras-sociales" component={ObraSocial} />,
+                <Route exact key="5" path="/obras-sociales" component={ObraSocialList} />,
                 <Route exact key="6" path="/obras-sociales/new" component={ObraSocialForm} />,
                 <Route exact key="7" path="/obras-sociales/edit/:id" component={ObraSocialForm} />,
                 <Route exact key="8" path="/obras-sociales/:id" component={ObraSocialInfo} />,
