@@ -1,11 +1,27 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
+import useUser from "../hooks/useUser";
 
 const Header = () => {
-        return (
-            <header>
-                <h1>SISTEMA DE GESTIÓN DE TURNOS</h1>
-            </header>
-        )
-    }
+  const { isLogged, logout } = useUser();
 
-export default Header
+  const handleClick = (event) => {
+    event.preventDefault();
+    logout();
+  };
+
+  return (
+    <header>
+      <h1>SISTEMA DE GESTIÓN DE TURNOS</h1>
+      {isLogged ? (
+        <Link to="#" onClick={handleClick}>
+          Logout
+        </Link>
+      ) : (
+        <Link to="/login">Login</Link>
+      )}
+    </header>
+  );
+};
+
+export default Header;
